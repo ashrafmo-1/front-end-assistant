@@ -1,10 +1,27 @@
 [
   {
     "tools": {
-
+      "js": "",
+      "ts": "",
+      "json": "",
+      "state": "",
+      "php": ""
     },
     "pages": {
-
+      "section1": "buttons",
+      "section2": "prodcuts",
+      "section3": "colros",
+      "section4": "prtfolios",
+      "section5": "posts",
+      "section6": "workers",
+      "section7": "github repos and organaizations",
+      "section8": "main courses",
+      "section9": "sass course",
+      "section10": "js courses",
+      "section11": "python courses",
+      "section12": "cpp courses",
+      "section13": "cv",
+      "section14": "ai"
     }
   }
 ]
