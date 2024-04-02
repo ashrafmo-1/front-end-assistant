@@ -1,24 +1,29 @@
 import React from 'react';
-import { Fragment } from 'react'
-// import { Disclosure, Menu, Transition } from '@headlessui/react';
-// import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import Link from "next/link";
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+  { name: 'home', href: '/' },
+  { name: 'contributors', href: '/pages/admins' },
+  { name: 'Projects', href: '/' },
+  { name: 'learn', href: '/' },
+];
 
 const NavgationBar = () => {
   return (
-    <div className='brand bg-blue-600 text-stone-400 text-9xl'> brand name </div>
+    <section className='navgationBar bg-gradient-to-r from-blue-400 border-blue-400 border-b-2 py-2'>
+      <div className='container_content w-4/5 m-auto flex items-center justify-between'>
+        <Link href={"/"} className='brand text-3xl font-bold text-black capitalize'>front-end assistant</Link>
+        <nav className='links flex gap-4'>
+          {navigation.map((link) => (
+            <>
+              <Link href={link.href} className='link cursor-pointer text-black capitalize'>{link.name}</Link>
+              <Link href={""}></Link>
+            </>
+          ))}
+        </nav>
+      </div>
+    </section>
   )
 }
 
 export default NavgationBar;
-

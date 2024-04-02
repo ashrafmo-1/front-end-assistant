@@ -5,9 +5,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <HomePage />
-      <h1 className="text-6xl font-bold underline">
-        Hello world!
-      </h1>
     </main>
   );
 }
