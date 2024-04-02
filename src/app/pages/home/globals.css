@@ -1,0 +1,88 @@
+.home {
+  background-color: var(--BGC);
+  & .landing {
+    & .sea {
+      width: 100%;
+      overflow: hidden;
+      > .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        background: url(assets/images/wave.png);
+        background-size: 1000px 100px;
+        z-index: 1000;
+        &.wave-1 {
+          animation: sea 10s linear infinite;
+          z-index: 1000;
+        }
+        &.wave-2 {
+          animation: sea_2 8s linear infinite;
+          opacity: 0.8;
+          z-index: 999;
+        }
+        &.wave-3 {
+          animation: sea 6s linear infinite;
+          animation-delay: -2s;
+          opacity: 0.6;
+          z-index: 998;
+        }
+        &.wave-4 {
+          animation: sea 4s linear infinite;
+          opacity: 0.4;
+          z-index: 997;
+        }
+      }
+    }
+    .animationScroll {
+      width: 23px;
+      height: 60px;
+      border: 1px solid;
+      border-color: rgb(0, 0, 0);
+      border-radius: 15px;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      &::after{
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: topDown 2s ease-in-out infinite;
+      }
+    }
+  }
+}
+@keyframes sea {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes sea_2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+
+@keyframes topDown {
+  0%, 100% {
+    top: 20%;
+  }
+  50% {
+    top: 80%;
+  }
+}
