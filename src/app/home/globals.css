@@ -35,10 +35,10 @@
         }
       }
     }
-    .animationScroll {
-      width: 23px;
+    & .animationScroll {
+      width: 25px;
       height: 60px;
-      border: 1px solid;
+      border: 5px solid;
       border-color: rgb(0, 0, 0);
       border-radius: 15px;
       position: absolute;
@@ -48,8 +48,8 @@
       &::after{
         content: "";
         position: absolute;
-        width: 4px;
-        height: 4px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background-color: #000;
         top: 50%;
@@ -76,7 +76,6 @@
     background-position-x: -1000px;
   }
 }
-
 
 @keyframes topDown {
   0%, 100% {

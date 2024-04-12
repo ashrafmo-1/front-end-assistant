@@ -1,0 +1,57 @@
+#navBarControl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust z-index as needed */
+  /* Additional styles for your fixed navigation bar */
+  transition: .5s;
+}
+
+/* .navgationBar {
+  .btn_more,
+  .learning_more {
+    > .more_links {
+      display: none;
+    }
+  }
+  .btn_more,
+  .learning_more {
+    position: relative;
+  }
+  .btnLinks_btn,
+  .learningLinks_btn {
+    cursor: pointer;
+  }
+  .btn_more:hover .more_links,
+  .learning_more:hover .more_links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    top: 27px;
+    width: 200px;
+    .link {
+      color: var(--text_color);
+      font-size: 18px;
+    }
+    .link:not(:last-child) {
+      border-bottom: 1px solid #777;
+    }
+  }
+} */
+
+
+#docsPage {
+  border: 1px solid;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border-color: #fff;
+  transition: .5s;
+  &:hover {
+    border-radius: 6px;
+    background-color: #EEE;
+    color: rgb(0, 54, 155);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+  }
+}

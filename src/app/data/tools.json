@@ -8,7 +8,8 @@
       "php": ""
     },
     "pages": {
-      "section1": "buttons",
+      "section0": "buttons",
+      "section1": "icons",
       "section2": "projects",
       "section3": "colros",
       "section4": "prtfolios",
@@ -21,7 +22,13 @@
       "section11": "python courses",
       "section12": "cpp courses",
       "section13": "cv",
-      "section14": "ai"
+      "section14": "ai",
+      "section15": "problems web site",
+      "section16": "animation",
+      "section17": "tube chanal",
+      "section18": "fake apis",
+      "name_section1": "buttons sites"
     }
   }
 ]
+

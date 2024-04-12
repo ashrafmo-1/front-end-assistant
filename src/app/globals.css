@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --text_color: #EEE;
-    --BGC: #60a5fa;
+    --BGC: #0073ff;
   }
 }
 
@@ -16,4 +16,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body, html {
+  scroll-behavior: smooth;
 }

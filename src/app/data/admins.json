@@ -1,23 +1,16 @@
 [
   {
-    "id": "0",
-    "name": "ashraf mohamed",
-    "image": "",
-    "jop": "front end enginer",
-    "github": ""
-  },
-  {
     "id": "1",
     "name": "ahmed mostafa",
-    "image": "",
+    "image": "/public/admins/elkwawy.jpg",
     "jop": "front end enginer",
-    "github": ""
+    "github": "https://github.com/elkwawy"
   },
   {
     "id": "3",
     "name": "Fady alamir",
-    "image": "",
+    "image": "/public/admins/fady.jpg",
     "jop": "front end enginer",
-    "github": ""
+    "github": "https://github.com/fadyalamir"
   }
 ]
