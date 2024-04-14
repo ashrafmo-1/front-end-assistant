@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --text_color: #EEE;
-    --BGC: #0073ff;
-  }
+:root {
+  --text_color: rgb(255, 255, 255);
+  --description_color: rgb(200, 200, 200);
+  --BGC: #0000ff; /* #0000FF */
+  --Secont_BGC: #000c66; /* ##000C66 */
+  --lines: #050a30; /* #050A30 */
 }
 
 @layer base {
@@ -18,6 +19,7 @@
   }
 }
 
-body, html {
+body,
+html {
   scroll-behavior: smooth;
 }
