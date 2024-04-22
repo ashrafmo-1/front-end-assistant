@@ -49,7 +49,7 @@ const NavgationBar = () => {
 
   return (
 
-    <section id={isNavFixed ? "navBarControl" : ""} className="navgationBar bg-gradient-to-r from-blue-500 to-blue-900 border-blue-400 py-2">
+    <section id={isNavFixed ? "navBarControl" : ""} className="navgationBar z-50 bg-gradient-to-r from-blue-500 to-blue-900 border-blue-400 py-2">
       <div className="container_content w-4/5 m-auto flex items-center justify-between">
         <Link
           href={"/"}

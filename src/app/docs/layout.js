@@ -1,45 +1,58 @@
 import React from "react";
-import Link from "next/link"
-import Banner from "../layout/banars/Banners";
-import NavgationBar from "../layout/navbar/nav";
+import Link from "next/link";
+import "./globals.css"; // docs globals css styling
 
 export const metadata = {
   title: "tools Assistant",
   description: "front end assistant sections",
 };
 
-const pages = [
-  { id: "0", name: "home", link: "/pages/docs" },
-  { id: "1", name: "projects", link: "/pages" },
-  { id: "2", name: "github", link: "/pages" },
-  { id: "3", name: "learn", link: "/pages" },
-  { id: "5", name: "couces", link: "/pages" },
-  { id: "5", name: "chanaleges", link: "/pages" },
-  { id: "5", name: "programming language", link: "/pages" },
+export const pages = [
+  { name: "introduction", link: "/docs" },
+  { name: "information styles", link: "/docs/stylingassistant" },
+  { name: "learn programming language", link: "/docs/learnProgramming" },
+  { name: "problem solving pages", link: "/docs" },
+  { name: "visual stodio extintions", link: "/docs/vsExtintions" },
+  { name: "ai tools", link: "/docs/aitools" },
+  { name: "cv pages", link: "/docs" },
+  { name: "fake apis pages", link: "/docs" },
+  { name: "are you need help? contact", link: "/docs" },
 ];
 
 const layout = ({ children }) => {
   return (
     <>
-      <Banner />
-      <NavgationBar />
-    <section className="pagesInformationAndAllSections w-full flex">
-      <div className="sidebae bg-slate-400 w-1/5 h-screen  border-r-4 border-slate-700">
-        <h1 className="title text-4xl mb-8 bg-slate-700 py-3 px-4 text-white">
-          pages Assistant
-        </h1>
-        <div className="linksPages py-1 px-4">
-          <ul className="flex flex-col">
-            {pages.map((link) => (
-              <Link href={link.link} className="underline text-2xl">
-                {link.name}
-              </Link>
-            ))}
-          </ul>
+      {/* <NavgationBar /> */}
+      <section className="pagesInformationAndAllSections w-full flex">
+        <div
+          className="sidebae w-1/5 h-screen border-r"
+          style={{ backgroundColor: "var(--Docs_BGC)", borderColor: "var(--Docs_BGC"}}
+        >
+          <h1
+            className="title text-4xl mb-8 py-3 px-4 text-white capitalize"
+            style={{ backgroundColor: "var(--Docs_BGC)", height: "50px" }}
+          >
+            pages assistant
+          </h1>
+          <div className="linksPages py-1 px-4">
+            <ul className="flex flex-col gap-4">
+              {pages.map((link) => (
+                <Link
+                  href={link.link}
+                  className="text-2xl rounded py-1 px-2 capitalize"
+                  style={{
+                    backgroundColor: "var(--Docs_Second_BGC)",
+                    color: "var(--Docs_text_color)",
+                  }}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
-      <div className=" w-4/5 bg-slate-400">{children}</div>
-    </section>
+        <div className=" w-4/5" style={{backgroundColor: "var(--Docs_Second_BGC)"}}>{children}</div>
+      </section>
     </>
   );
 };

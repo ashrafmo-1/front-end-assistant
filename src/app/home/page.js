@@ -4,6 +4,7 @@ import React from "react";
 import "./globals.css";
 import Link from "next/link";
 import Contributors from "../admins/page";
+import Catigory from "../components/sectionBoxesCatigory/page";
 
 const HomePage = () => {
   return (
@@ -62,6 +63,9 @@ const HomePage = () => {
       </section>
       <section className="" id="admins">
         <Contributors />
+      </section>
+      <section className="mt-10" id="catigorys">
+        <Catigory />
       </section>
       </>
   );

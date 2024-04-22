@@ -6,6 +6,7 @@
   z-index: 1000; /* Adjust z-index as needed */
   /* Additional styles for your fixed navigation bar */
   transition: .5s;
+  z-index: 99999;
 }
 
 /* .navgationBar {

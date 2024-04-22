@@ -10,8 +10,16 @@
   --lines: #050a30; /* #050A30 */
 }
 
-/* fady will type code here */
+/* scroll bar  */
+&::-webkit-scrollbar {
+  width: 2px;
+}
+&::-webkit-scrollbar-thumb {
+  background: var(--BGC);
+  border-radius: 4px;
+}
 
+/* fady will type code here */
 
 /* fady end code */
 
