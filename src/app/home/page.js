@@ -5,6 +5,7 @@ import "./globals.css";
 import Link from "next/link";
 import Contributors from "../admins/page";
 import Catigory from "../components/sectionBoxesCatigory/page";
+import Footer from "../layout/footer/Footer";
 
 const HomePage = () => {
   return (
@@ -66,6 +67,9 @@ const HomePage = () => {
       </section>
       <section className="mt-10" id="catigorys">
         <Catigory />
+      </section>
+      <section className=" border border-sky-900 pt-6" id="footer" style={{backgroundColor: "var(--BGC)"}}>
+        <Footer />
       </section>
       </>
   );

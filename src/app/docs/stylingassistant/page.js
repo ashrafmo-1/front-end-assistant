@@ -1,8 +1,11 @@
 import React from 'react'
+import Dir from '../layout/direction/dir';
 
 const page = () => {
   return (
-    <div>styling assistant</div>
+    <section>
+      <Dir dir_1={" -> Docs"} dir_2={"-> Information Styles"} />
+    </section>
   )
 }
 

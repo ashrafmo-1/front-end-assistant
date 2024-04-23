@@ -14,7 +14,7 @@ export const pages = [
   { name: "problem solving pages", link: "/docs" },
   { name: "visual stodio extintions", link: "/docs/vsExtintions" },
   { name: "ai tools", link: "/docs/aitools" },
-  { name: "cv pages", link: "/docs" },
+  { name: "cv sites", link: "/docs" },
   { name: "fake apis pages", link: "/docs" },
   { name: "are you need help? contact", link: "/docs" },
 ];
@@ -43,9 +43,8 @@ const layout = ({ children }) => {
                   style={{
                     backgroundColor: "var(--Docs_Second_BGC)",
                     color: "var(--Docs_text_color)",
-                  }}
-                >
-                  {link.name}
+                  }}>
+                  { link.name }
                 </Link>
               ))}
             </ul>
