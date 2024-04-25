@@ -8,26 +8,8 @@ import "./nav.css";
 const navigation = [
   { name: "home", href: "/" },
   { name: "contributors", href: "#admins" },
-  { name: "Projects", href: "/" },
-  { name: "learn", href: "/" },
+  { name: "catigorys", href: "#catigory" },
   { name: "docs", href: "/docs", id: "docsPage" },
-];
-const styling = [
-  { name_section: "buttons sites", href_section: "/" },
-  { name_section: "icons sites", href_section: "/pages/admins" },
-  { name_section: "Projects sites", href_section: "/" },
-  { name_section: "colors sites", href_section: "/" },
-  { name_section: "prtfolios sites", href_section: "/" },
-  { name_section: "animation sites", href_section: "/" },
-];
-const learning = [
-  { name_section: "javaScript", href_section: "/" },
-  { name_section: "typeScript", href_section: "/pages/admins" },
-  { name_section: "python", href_section: "/" },
-  { name_section: "c++", href_section: "/" },
-  { name_section: "php", href_section: "/" },
-  { name_section: "sass", href_section: "/" },
-  { name_section: "problem solving sites", href_section: "/" },
 ];
 
 const NavgationBar = () => {
@@ -49,7 +31,7 @@ const NavgationBar = () => {
 
   return (
 
-    <section id={isNavFixed ? "navBarControl" : ""} className="navgationBar bg-gradient-to-r from-blue-500 to-blue-900 border-blue-400 py-2">
+    <section id={isNavFixed ? "navBarControl" : ""} className="navgationBar z-50 bg-gradient-to-r from-blue-500 to-blue-900 border-blue-400 py-2">
       <div className="container_content w-4/5 m-auto flex items-center justify-between">
         <Link
           href={"/"}

@@ -1,0 +1,37 @@
+.catigory {
+  overflow: hidden;
+  .boxes_skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  
+    .skill_box {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    background-color: var(--description_color);
+    top: 140px;
+    left: -10%;
+    transform: rotate(-10deg);
+    z-index: -1;
+    animation: leftRight 4s ease-in-out infinite;
+  }
+}
+
+/*  */
+@keyframes leftRight {
+0%, 100% {
+  transform: rotate(-10deg);
+}
+50% {
+  transform: rotate(-6deg);
+}
+}

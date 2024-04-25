@@ -11,14 +11,14 @@ const admins = [
     id: "1",
     name: "ahmed mostafa",
     image: "/public/admins/elkwawy.jpg",
-    jop: "front end enginer",
+    jop: "soft ware front end developer",
     github: "https://github.com/elkwawy",
   },
   {
     id: "3",
     name: "Fady alamir",
     image: "/public/admins/fady.jpg",
-    jop: "front end enginer",
+    jop: "soft ware front end developer",
     github: "https://github.com/fadyalamir",
   },
 ];
@@ -62,10 +62,10 @@ const Contributors = () => {
               <div className="info">
                 <h2 className="title capitalize">{admin.name}</h2>
                 <h2 className="title capitalize mb-2">
-                  Creator of Front end tools
+                {admin.jop}
                 </h2>
                 <Link
-                  href={"https://github.com/ashrafmo-1"}
+                  href={admin.github}
                   target="_blank"
                   className="title capitalize bg-gray-400 py-1 px-2"
                 >
