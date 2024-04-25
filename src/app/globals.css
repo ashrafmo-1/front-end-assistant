@@ -21,6 +21,21 @@
 
 /* fady will type code here */
 
+:root {
+  --text_color: #fff;
+  --description_color: #aeebd380;
+  --BGC: #34e5af;
+  --Secont_BGC: #25d391;
+  --lines: #95c8e5;
+}
+
+.dark-root {
+  --text_color: #fff;
+  --description_color: #ffffff;
+  --BGC: #1b1b1b;
+  --Secont_BGC: #2b2b2b;
+  --lines: #050a30;
+}
 
 /* fady end code */
 
