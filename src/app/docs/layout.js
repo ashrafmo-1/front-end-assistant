@@ -11,7 +11,7 @@ export const pages = [
   { name: "introduction", link: "/docs" },
   { name: "information styles", link: "/docs/stylingassistant" },
   { name: "learn programming language", link: "/docs/learnProgramming" },
-  { name: "problem solving pages", link: "/docs" },
+  { name: "problem solving pages", link: "/docs/problemsolving" },
   { name: "visual stodio extintions", link: "/docs/vsExtintions" },
   { name: "ai tools", link: "/docs/aitools" },
   { name: "cv sites", link: "/docs" },

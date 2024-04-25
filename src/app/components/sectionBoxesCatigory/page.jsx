@@ -14,7 +14,7 @@ const BoxesInfo = [
 
 const Catigory = () => {
   return (
-    <section className="catigory mt-44 relative">
+    <section className="catigory mt-44 relative" id="catigory">
       <div className="container_content w-2/3 m-auto mt-28 mb-10">
         <h2 className="title capitalize text-center text-5xl w-3/4 m-auto font-bold mb-32">
           skills and training information page for front end assistant

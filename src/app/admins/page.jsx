@@ -65,7 +65,7 @@ const Contributors = () => {
                 {admin.jop}
                 </h2>
                 <Link
-                  href={"https://github.com/ashrafmo-1"}
+                  href={admin.github}
                   target="_blank"
                   className="title capitalize bg-gray-400 py-1 px-2"
                 >
