@@ -1,6 +1,7 @@
 "use client"
 import XMarkIcon  from './XMarkIcon.png';
 import Image from "next/image";
+import "./globlas.css";
 
 export default function Banner() {
   
@@ -15,7 +16,7 @@ export default function Banner() {
   return (
     <div className="banar relative isolate flex items-center justify-center bg-gray-50 px-6 py-2.5">
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <p className="text-sm leading-6 text-gray-900">
+        <p className="text-sm leading-6 text-gray-900 none_media">
           <strong className="font-semibold">GitHub Folow</strong>
           <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
             <circle cx={1} cy={1} r={1} />

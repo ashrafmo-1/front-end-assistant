@@ -16,10 +16,10 @@ const Catigory = () => {
   return (
     <section className="catigory mt-44 relative" id="catigory">
       <div className="container_content w-2/3 m-auto mt-28 mb-10">
-        <h2 className="title capitalize text-center text-5xl w-3/4 m-auto font-bold mb-32">
+        <h2 className="header_title capitalize text-center text-5xl w-3/4 m-auto font-bold mb-32">
           skills and training information page for front end assistant
         </h2>
-        <div className="boxes_skills">
+        <div className="boxes_skills mt-20">
         {BoxesInfo.map((box) => (
             <div className="skill_box relative h-40 rounded" style={{backgroundColor: "var(--Secont_BGC)"}}>
               <Image className="absolute left-1/2 -translate-x-1/2 -translate-y-12" src={box.img.replace('/public', '')} width={80} height={80} alt={box.title} />

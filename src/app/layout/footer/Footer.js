@@ -6,6 +6,7 @@ import linkedin from "../../../../public/assets/socialmedia/linkedin.png";
 import whatsapp from "../../../../public/assets/socialmedia/whatsapp.png";
 import Image from "next/image";
 import Link from "next/link";
+import "./globlas.css";
 
 const conection = [
   {title: "face book"},
@@ -46,10 +47,9 @@ const Footer = () => {
         </div>
         <div className='btns flex flex-col justify-start items-start gap-3'>
           <button className="btn btn-primary border w-40 h-9 text-2xl capitalize rounded flex justify-center items-center" style={{color: "var(--text_color)", borderColor: "var(--text_color)"}}>site src</button>
-          <button className="btn btn-primary border px-2 h-9 text-2xl capitalize rounded flex justify-center items-center" style={{color: "var(--text_color)", borderColor: "var(--text_color)"}}>are you programming click here</button>
         </div>
       </div>
-      <div className='inforamtion flex gap-20 flex-wrap'>
+      <div className='inforamtion flex gap-10 flex-wrap'>
         <ul>
           <li className='title mb-1 text-2xl' style={{color: "var(--text_color)"}}>conection</li>
           {conection.map((conect) => (

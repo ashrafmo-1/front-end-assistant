@@ -1,0 +1,25 @@
+@media(max-width: 890px) {
+  .admins {
+    .header_title {
+      width: 100% !important;
+      margin: auto !important;
+    }
+  }
+  .container_content {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .box_admin {
+    width: 100% !important;
+    
+  }
+  
+}
+@media(max-width: 620px) {
+  .admins {
+    .header_title {
+      font-size: 32px;
+    }
+  }
+  
+}

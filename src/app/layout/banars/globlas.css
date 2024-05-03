@@ -1,0 +1,10 @@
+@media(max-width: 650px) {
+  .banar {
+    padding-inline: .4rem !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+  }
+  .none_media {
+    display: none;
+  }
+}

@@ -35,3 +35,20 @@
   transform: rotate(-6deg);
 }
 }
+
+@media(max-width: 890px) {
+  .catigory {
+    .header_title {
+      width: 100% !important;
+      margin: auto !important;
+    }
+  }
+}
+@media(max-width: 620px) {
+  .catigory {
+    .header_title {
+      font-size: 32px;
+    }
+  }
+  
+}

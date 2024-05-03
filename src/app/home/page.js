@@ -1,21 +1,14 @@
 import Banner from "@/app/layout/banars/Banners";
-import NavgationBar from "@/app/layout/navbar/nav";
 import React from "react";
 import "./globals.css";
 import Link from "next/link";
-import Contributors from "../admins/page";
-import Catigory from "../components/sectionBoxesCatigory/page";
-import Footer from "../layout/footer/Footer";
 
 const HomePage = () => {
   return (
-    <>
-    <section className="home h-screen" id="landing">
-        <Banner />
-        <NavgationBar />
-        <div className="landing w-4/5 m-auto flex justify-center content-center flex-col">
+    <section className="home h-screen relative" id="landing">
+        <div className="landing w-4/5 m-auto flex justify-center content-center flex-col mediaContiner">
           <h1
-            className="welcom_message font-bold text-center text-5xl capitalize mt-32 w-2/3 m-auto"
+            className="welcom_message font-bold text-center text-5xl capitalize mt-28"
             style={{ color: "var(--text_color)" }}
           >
             Are you looking for tools, templates, components and a lot of
@@ -62,16 +55,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="" id="admins">
-        <Contributors />
-      </section>
-      <section className="mt-10" id="catigorys">
-        <Catigory />
-      </section>
-      <section className=" border border-sky-900 pt-6" id="footer" style={{backgroundColor: "var(--BGC)"}}>
-        <Footer />
-      </section>
-      </>
   );
 };
 
